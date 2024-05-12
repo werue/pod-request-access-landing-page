@@ -1,0 +1,90 @@
+:root{
+    --green: #54E6AF;
+    --light-gray:#C2CBE5;
+    --gray: #5a668a;
+    --darkgray: #2C344B;
+    --black: #121725;
+
+    --small-p: 0.77778rem;
+    --header-size:2.88889rem;
+
+    font-size:18px;
+}
+
+body{
+    margin:0;
+    height:100vh;
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    background-color:var(--black);
+}
+
+h1, p{
+    margin: 0;
+}
+
+.mainContainer{
+    min-width: 70.83333rem;
+    height: 35.55556rem;
+
+    display:flex;
+    align-items:flex-end;
+    position:relative;
+}
+
+.bgImgContainer{
+    position:absolute;
+        right:0;
+    z-index:-1;
+    height: 100%;
+}
+
+bgImgContainer__img{
+    object-fit:fill;
+    height:100%;
+    width:69.64705882352941%;
+}
+
+.logo{
+    position:absolute;
+        left:0;
+        top:-1.55556rem;
+}
+
+.mainContent{
+    width:56.70588%;
+    height:79.53125%;
+    box-sizing:border-box;
+    padding: 88px 58px 0 0;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    background-color:var(--black);
+}
+
+.platformIconContainer{
+
+    width:74.13554633471646%;
+    margin-top:24px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.platformIcon{
+    height:1.61111rem;
+}
+
+.platformIconGoogle{
+    height:1rem;
+}
+
+.platformIconPocketCasts{
+    height:1.44444rem;
+}
