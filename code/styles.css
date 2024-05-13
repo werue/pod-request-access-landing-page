@@ -9,6 +9,8 @@
     --header-size:2.88889rem;
 
     font-size:18px;
+    font-family: "Chivo", sans-serif;
+    font-optical-sizing: auto;
 }
 
 body{
@@ -27,7 +29,7 @@ h1, p{
 }
 
 .mainContainer{
-    min-width: 70.83333rem;
+    width: 70.83333rem;
     height: 35.55556rem;
 
     display:flex;
@@ -67,6 +69,64 @@ bgImgContainer__img{
     background-color:var(--black);
 }
 
+.productInfo__header{
+    margin-bottom:24px;
+
+    color:var(--green);
+    font-size:var(--header-size);
+    font-weight:100;
+    line-height:3.44444rem;
+}
+
+.productInfo__span{
+    color:white;
+}
+
+.productInfo__desc{
+    color:var(--light-gray);
+    font-weight:100;
+    line-height:1.55556rem;
+    width:66.91729%;
+}
+
+.registration{
+    width: 64.21053%;
+    height: 3.11111rem;
+    box-sizing:border-box;
+    padding:5px 5px 5px 32px;
+
+    display:flex;
+    border-radius:28px;
+    background-color:var(--darkgray);
+}
+
+.registration__input{
+    flex-grow:6;
+    background:none;
+    border:none;
+    color:white;
+    font:inherit;
+    font-weight:600;
+    font-size:var(--small-p);
+}
+
+.registration__input::placeholder{
+    color:var(--light-gray);
+}
+
+.registration__btn{
+    /*width:38.38862%;*/
+    flex-grow:4;
+
+    border-radius:28px;
+    background-color:var(--green);
+    color:var(--black);
+    border:none;
+    font:inherit;
+    font-size:var(--small-p);
+    font-weight:600;
+}
+
 .platformIconContainer{
 
     width:74.13554633471646%;
@@ -87,4 +147,11 @@ bgImgContainer__img{
 
 .platformIconPocketCasts{
     height:1.44444rem;
+}
+
+.dotGrid{
+    position:absolute;
+        right:0;
+        bottom:-2.88888rem;
+
 }
