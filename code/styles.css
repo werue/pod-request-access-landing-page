@@ -24,13 +24,19 @@ body{
     background-color:var(--black);
 }
 
+input:focus{
+    outline:0;
+}
+
 h1, p{
     margin: 0;
 }
 
 .mainContainer{
-    width: 70.83333rem;
-    height: 35.55556rem;
+    /*width: 70.83333rem;
+    height: 35.55556rem;*/
+    width:1275px;
+    height:640px;
 
     display:flex;
     align-items:flex-end;
@@ -47,7 +53,7 @@ h1, p{
 bgImgContainer__img{
     object-fit:fill;
     height:100%;
-    width:69.64705882352941%;
+    width:49.33333rem;
 }
 
 .logo{
@@ -57,8 +63,10 @@ bgImgContainer__img{
 }
 
 .mainContent{
-    width:56.70588%;
-    height:79.53125%;
+    width:40.16667rem;
+    height:28.27778rem;
+    /*width:723px;*/
+    /*height:509px;*/
     box-sizing:border-box;
     padding: 88px 58px 0 0;
     
@@ -86,11 +94,11 @@ bgImgContainer__img{
     color:var(--light-gray);
     font-weight:100;
     line-height:1.55556rem;
-    width:66.91729%;
+    width:24.72222rem;
 }
 
 .registration{
-    width: 64.21053%;
+    width: 23.72222rem;
     height: 3.11111rem;
     box-sizing:border-box;
     padding:5px 5px 5px 32px;
@@ -114,8 +122,8 @@ bgImgContainer__img{
     color:var(--light-gray);
 }
 
+
 .registration__btn{
-    /*width:38.38862%;*/
     flex-grow:4;
 
     border-radius:28px;
@@ -129,7 +137,7 @@ bgImgContainer__img{
 
 .platformIconContainer{
 
-    width:74.13554633471646%;
+    width:29.77778rem;
     margin-top:24px;
 
     display:flex;
@@ -154,4 +162,33 @@ bgImgContainer__img{
         right:0;
         bottom:-2.88888rem;
 
+}
+
+@media(max-width:768px){
+body{
+    display:block;
+}
+
+.logo{
+    top:2.77778rem;
+    left:2.16667rem;
+}
+
+.mainContainer{
+    height:767px;
+    width:100%;
+}
+
+.mainContent{
+    padding-left:39px;
+}
+
+.productInfo__header{
+    font-size:2.66667rem;
+}
+
+.dotGrid{
+    bottom:-14.27778rem;
+    left:1.66667rem;
+}
 }
