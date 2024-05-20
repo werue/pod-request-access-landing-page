@@ -5,6 +5,7 @@
     --gray: #5a668a;
     --darkgray: #2C344B;
     --black: #121725;
+    --red: #FB3E3E;
 
     --small-p: 0.77778rem;
     --header-size:2.88889rem;
@@ -64,10 +65,10 @@ h1, p{
 }
 
 .mainContent{
-    width:40.16667rem;
-    height:28.27778rem;
-    /*width:723px;*/
-    /*height:509px;*/
+    /*width:40.16667rem;
+    height:28.27778rem;*/
+    width:723px;
+    height:509px;
     box-sizing:border-box;
     padding: 88px 58px 0 0;
     
@@ -105,6 +106,7 @@ h1, p{
     padding:5px 5px 5px 32px;
 
     display:flex;
+    position:relative;
     border-radius:28px;
     background-color:var(--darkgray);
 }
@@ -139,6 +141,15 @@ h1, p{
 .registration__btn:hover{
     background-color:var(--brightgreen);
     cursor:pointer;
+}
+
+.emailErrorText{
+    font-size:0.66667rem;
+    color:var(--red);
+    position:absolute;
+        bottom:-18px;
+    
+    display:none;
 }
 
 .platformIconContainer{
@@ -289,6 +300,10 @@ h1, p{
         flex-grow:1;
         padding:0.5rem 0;
     
+    }
+
+    .emailErrorText{
+            left:32px;
     }
 
     .platformIconContainer{
