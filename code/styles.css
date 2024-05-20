@@ -1,5 +1,6 @@
 :root{
     --green: #54E6AF;
+    --brightgreen:#B3FFE2;
     --light-gray:#C2CBE5;
     --gray: #5a668a;
     --darkgray: #2C344B;
@@ -50,11 +51,11 @@ h1, p{
     height: 100%;
 }
 
-bgImgContainer__img{
+/*.bgImgContainer__img{
     object-fit:fill;
     height:100%;
     width:49.33333rem;
-}
+}*/
 
 .logo{
     position:absolute;
@@ -135,6 +136,11 @@ bgImgContainer__img{
     font-weight:600;
 }
 
+.registration__btn:hover{
+    background-color:var(--brightgreen);
+    cursor:pointer;
+}
+
 .platformIconContainer{
 
     width:29.77778rem;
@@ -168,7 +174,7 @@ bgImgContainer__img{
     display:none;
 }
 
-@media(max-width:811px){
+@media(max-width:1249px){
     body{
         display:block;
     }
@@ -193,8 +199,8 @@ bgImgContainer__img{
     }
 
     .dotGrid{
-        bottom:-14.27778rem;
-        left:1.66667rem;
+        bottom:-130px;
+        left:30px;
     }
 }
 
@@ -217,14 +223,16 @@ bgImgContainer__img{
         height:100vh;
     }
 
-    /*.bgImgContainer{
+    .bgImgContainer{
+        display:flex;
+        align-items:center;
 
-    }*/
+    }
 
     .bgImgContainer__img{
         object-fit:fill;
-        height:100vh;
-        width:100%;
+        height:667px;
+        width:375px;
     }
 
     .mainContent{
@@ -235,6 +243,7 @@ bgImgContainer__img{
         text-align:center;
         justify-content:flex-start;
         align-items:center;
+        background-color:hsla(224, 35%, 11%, 0.9);
     }
     
     .logo-m{

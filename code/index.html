@@ -16,10 +16,10 @@
 </head>
 <body>
   <article class="mainContainer">
-    <article class="bgImgContainer">    
+    <article class="bgImgContainer">
       <picture>
         <source media="(max-width:450px)" srcset="assets/mobile/image-host.jpg">
-        <source media="(max-width:811px)" srcset="assets/tablet/image-host.jpg">
+        <source media="(max-width:1249px)" srcset="assets/tablet/image-host.jpg">
         <img src="assets/desktop/image-host.jpg" class="bgImgContainer__img">
       </picture>
     </article>
@@ -43,9 +43,10 @@
         <img src="assets/desktop/pocket-casts.svg" class="platformIconPocketCasts">
       </article>
 
-      <form class="registration">
+      <form novalidate class="registration">
         <input type="email" placeholder="Email address" required class="registration__input">
         <button type="submit" class="registration__btn">Request access</button>
+        <p class="emailErrorText"></p>
       </form>
 
       <article class="platformIconContainer desktop">
@@ -58,5 +59,6 @@
     </main>
 
   </article>
+  <script src="app.js"></script>
 </body>
 </html>
